@@ -1,0 +1,76 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cypad.Model", "Cypad.Model\Cypad.Model.csproj", "{1901900C-3377-4413-9BE3-F99F3AD401E6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{FB2AED17-6184-4B69-82C6-10891EADE544} = {FB2AED17-6184-4B69-82C6-10891EADE544}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cypad.SchemaMapper", "Cypad.SchemaMapper\Cypad.SchemaMapper.csproj", "{2C0915E2-25F5-4293-B24F-968A460A464B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cypad.Repository", "Cypad.Repository\Cypad.Repository.csproj", "{A7C5C3A3-EE89-45F6-923B-CB4DCBB741BF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1901900C-3377-4413-9BE3-F99F3AD401E6} = {1901900C-3377-4413-9BE3-F99F3AD401E6}
+		{FB2AED17-6184-4B69-82C6-10891EADE544} = {FB2AED17-6184-4B69-82C6-10891EADE544}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cypad.Helper", "Cypad.Helper\Cypad.Helper.csproj", "{FB2AED17-6184-4B69-82C6-10891EADE544}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cypad.Service", "Cypad.Service\Cypad.Service.csproj", "{BE07DB34-DDE3-4330-A515-9285277C7CC8}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1901900C-3377-4413-9BE3-F99F3AD401E6} = {1901900C-3377-4413-9BE3-F99F3AD401E6}
+		{FB2AED17-6184-4B69-82C6-10891EADE544} = {FB2AED17-6184-4B69-82C6-10891EADE544}
+		{A7C5C3A3-EE89-45F6-923B-CB4DCBB741BF} = {A7C5C3A3-EE89-45F6-923B-CB4DCBB741BF}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cypad.Service.Tests", "Cypad.Service.Tests\Cypad.Service.Tests.csproj", "{B6260258-D6A5-47D8-A50F-0214C10F3078}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CypadUnitTest", "CypadUnitTest", "{F359F2B3-268E-4731-82CB-CDC7BB6C36CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cypad.Repository.Test", "Cypad.Repository.Test\Cypad.Repository.Test.csproj", "{D6FC6188-FBDB-4CE6-B08E-33E94C4F9F78}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1901900C-3377-4413-9BE3-F99F3AD401E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1901900C-3377-4413-9BE3-F99F3AD401E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1901900C-3377-4413-9BE3-F99F3AD401E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1901900C-3377-4413-9BE3-F99F3AD401E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C0915E2-25F5-4293-B24F-968A460A464B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C0915E2-25F5-4293-B24F-968A460A464B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C0915E2-25F5-4293-B24F-968A460A464B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C0915E2-25F5-4293-B24F-968A460A464B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7C5C3A3-EE89-45F6-923B-CB4DCBB741BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7C5C3A3-EE89-45F6-923B-CB4DCBB741BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7C5C3A3-EE89-45F6-923B-CB4DCBB741BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7C5C3A3-EE89-45F6-923B-CB4DCBB741BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB2AED17-6184-4B69-82C6-10891EADE544}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB2AED17-6184-4B69-82C6-10891EADE544}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB2AED17-6184-4B69-82C6-10891EADE544}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB2AED17-6184-4B69-82C6-10891EADE544}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE07DB34-DDE3-4330-A515-9285277C7CC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE07DB34-DDE3-4330-A515-9285277C7CC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE07DB34-DDE3-4330-A515-9285277C7CC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE07DB34-DDE3-4330-A515-9285277C7CC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6260258-D6A5-47D8-A50F-0214C10F3078}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6260258-D6A5-47D8-A50F-0214C10F3078}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6260258-D6A5-47D8-A50F-0214C10F3078}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6260258-D6A5-47D8-A50F-0214C10F3078}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6FC6188-FBDB-4CE6-B08E-33E94C4F9F78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6FC6188-FBDB-4CE6-B08E-33E94C4F9F78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6FC6188-FBDB-4CE6-B08E-33E94C4F9F78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6FC6188-FBDB-4CE6-B08E-33E94C4F9F78}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B6260258-D6A5-47D8-A50F-0214C10F3078} = {F359F2B3-268E-4731-82CB-CDC7BB6C36CD}
+		{D6FC6188-FBDB-4CE6-B08E-33E94C4F9F78} = {F359F2B3-268E-4731-82CB-CDC7BB6C36CD}
+	EndGlobalSection
+EndGlobal
