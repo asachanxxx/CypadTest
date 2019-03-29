@@ -59,8 +59,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GenericRepository.cs" />
-    <Compile Include="IGenericRepository.cs" />
+    <Compile Include="Asynchronous\GenericRepositoryAsync.cs" />
+    <Compile Include="Asynchronous\IGenericRepositoryAsync.cs" />
+    <Compile Include="Synchronous\ExtendedRepository.cs" />
+    <Compile Include="Synchronous\GenericRepository.cs" />
+    <Compile Include="Synchronous\IGenericRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

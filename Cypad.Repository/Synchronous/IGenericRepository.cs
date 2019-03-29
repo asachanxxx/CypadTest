@@ -10,9 +10,9 @@ namespace Cypad.Repository
     {
         IEnumerable<T> GetAll();
         T GetById(int id);
-        void Insert(T obj);
-        void Update(T obj);
-        void Delete(int id);
-        void Save();
+        int Insert(T obj);
+        bool Update(T obj);
+        bool Delete(int id);
+       
     }
 }

@@ -14,6 +14,7 @@ namespace Cypad.Model
         public decimal UnitPrice { get; set; }
         public decimal WsPrice { get; set; }
         public decimal SellingPrice { get; set; }
+        public decimal MinimumPricePrice { get; set; }
 
     }
 }
